@@ -13,8 +13,8 @@ script:
 after_sucess:
   - docker build -t luangonzalez/multi-client ./client
   - docker build -t luangonzalez/multi-nginx ./nginx
-  - docker built -t luangonzalez/multi-server ./server
-  - docker built -t luangonzalez/muilti-worker ./worker
+  - docker build -t luangonzalez/multi-server ./server
+  - docker build -t luangonzalez/muilti-worker ./worker
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
