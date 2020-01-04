@@ -14,7 +14,7 @@ after_sucess:
   - docker build -t luangonzalez/multi-client ./client
   - docker build -t luangonzalez/multi-nginx ./nginx
   - docker build -t luangonzalez/multi-server ./server
-  - docker build -t luangonzalez/muilti-worker ./worker
+  - docker build -t luangonzalez/multi-worker ./worker
 
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
